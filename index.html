@@ -7,20 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheh Sarfraz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/a354996216.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <header>
-        <nav>
-          <ul>
+        <nav class="wrapper">
+          <ul class="navigation">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Contact</a></li>
           </ul>
+        
+        <div class="headerText">
+          <h1>Sheh Sarfraz</h1>
+          <h3><span>Toronto</span> Based Web Developer</h3>
+          <a href="https://www.linkedin.com/in/shehsarfraz/" target="_blank">
+            <button>Get in Touch</button>
+          </a>
+        </div>
+
         </nav>
-        <h1>Sheh Sarfraz</h1>
-        <h3>Toronto Based Web Developer</h3>
-        <button>Get in Touch</button>
     </header>
 
     
@@ -28,78 +41,130 @@
 
         <!-- about section -->
         <section id="about">
-          
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate, asperiores tenetur unde iusto cum est soluta non atque delectus corrupti sed facilis repellat iure vel impedit! Officia, rem labore!</p>
-
+          <div class="wrapper about">
+            <img src="./assets/profilepic.jpg"/>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate, asperiores tenetur unde iusto cum est soluta non atque delectus corrupti sed facilis repellat iure vel impedit! Officia, rem labore!</p>
+          </div>
         </section>
         <!-- about section ends -->
 
         <!-- skills section -->
-        <section id="skills">
-
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
+        <section id="skills" class="skills">
+          <div class="wrapper skills">
+            <h2>Skills</h2>
+            <div class="iconContainer">
+              <ul class="icons">
+                <li><i class="fa-brands fa-html5 fa-7x"></i>
+                <p>HTML</p></li>
+                <li><i class="fa-brands fa-css3-alt fa-7x"></i>
+                <p>CSS</p></li>
+                <li><i class="fa-brands fa-sass fa-7x"></i>
+                <p>SASS</p></li>
+                <li><i class="fa-brands fa-square-js fa-7x"></i>
+                <p>JAVASCRIPT</p></li>
+                <li><i class="fa-brands fa-react fa-7x"></i>
+                <p>REACT</p></li>
+                <li><i class="fa-brands fa-github fa-7x"></i>
+                <p>GITHUB/GIT</p></li>
+                <li><i class="fa-solid fa-fire fa-7x"></i>
+                <p>FIREBASE</p></li>
+              </ul>
+            </div>
+          </div>
         </section>
         <!-- skills section ends -->
 
         <!-- projects section -->
-        <section id="projects">
+        <section id="projects" class="projects">
 
-          <div>
-            <!-- add screenshot here -->
-            <h3>Project Title</h3>
-            <h4>HTML, CSS, Javascript</h4>
-            <p>Project Description</p>
-            <button>View Live</button>
-            <button>View Code</button>
-          </div>
+          <div class="wrapper projects">
+            <h2>Projects</h2>
 
-          <div>
-            <!-- add screenshot here -->
-            <h3>Project Title</h3>
-            <h4>HTML, CSS, Javascript</h4>
-            <p>Project Description</p>
-            <button>View Live</button>
-            <button>View Code</button>          
-          </div>
+            <div class="projectGrid">
+              <div class="projectContainer">
+                <img src="./assets/Screenshot 2023-05-03 at 23-54-04 OREG.png" alt="">
+                <div>
+                  <div class="projectTextContainer">
+                    <h3>Multi-Page website</h3>
+                    <h4>HTML, CSS, Javascript</h4>
+                    <p>Converted PSD into a multi-page site with javascript functionality</p>
 
-          <div>
-            <!-- add screenshot here -->
-            <h3>Project Title</h3>
-            <h4>HTML, CSS, Javascript</h4>
-            <p>Project Description</p>
-            <button>View Live</button>
-            <button>View Code</button>
-          </div>
+                    <a href="https://sheh-projectone.netlify.app/" target="_blank">
+                    <button>View Live</button>
+                    </a>
+                    <a href="https://github.com/shehsarfraz/anushehSarfrazProjectOne.git" target="_blank">
+                    <button>View Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-          <div>
-            <!-- add screenshot here -->
-            <h3>Project Title</h3>
-            <h4>HTML, CSS, Javascript</h4>
-            <p>Project Description</p>
-            <button>View Live</button>
-            <button>View Code</button>
+              <div class="projectContainer">
+                <img src="" alt="">
+                <div>
+                  <div class="projectTextContainer">
+                    <h3>Project Title</h3>
+                    <h4>HTML, CSS, Javascript</h4>
+                    <p>Project Description</p>
+                    <button>View Live</button>
+                    <button>View Code</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projectContainer">
+                <img src="" alt="">
+                <div>
+                  <div class="projectTextContainer">
+                    <h3>Project Title</h3>
+                    <h4>HTML, CSS, Javascript</h4>
+                    <p>Project Description</p>
+                    <button>View Live</button>
+                    <button>View Code</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projectContainer">
+                <img src="" alt="">
+                <div>
+                  <div class="projectTextContainer">
+                    <h3>Project Title</h3>
+                    <h4>HTML, CSS, Javascript</h4>
+                    <p>Project Description</p>
+                    <button>View Live</button>
+                    <button>View Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </section>
         <!-- projects section ends -->
 
         <!-- contact section -->
-        <section id="contact">
+        <section id="contact" class="contact">
 
-          <!-- add icons here -->
-          <p>Contact Placeholder Text Blah Blah Blah</p>
-          <button>Email Sheh</button>
-
+          <div class="wrapper contact">
+            <h2>get in touch</h2>
+            <div class="iconContainer">
+              <ul class="icons">
+                <a href="https://www.linkedin.com/in/shehsarfraz/" target="_blank">
+                <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                </a>
+                <a href="mailto:anushehsarfraz@gmail.com" target="_blank">
+                <li><i class="fa-solid fa-envelope fa-lg"></i></li>
+                </a>
+                <a href="https://github.com/shehsarfraz" target="_blank">
+                <li><i class="fa-brands fa-github fa-lg"></i></li>
+                </a>
+              </ul>
+            </div>
+            <a href="https://www.linkedin.com/in/shehsarfraz/" target="_blank">
+            </a>
+          </div>
         </section>
         <!-- contact section ends -->
 
@@ -107,7 +172,7 @@
 
     <footer>
 
-      <p>Built in 2023 by Anusheh Sarfraz</p>
+      <p class="wrapper">Built in 2023 by Sheh Sarfraz</p>
 
     </footer>
 </body>
