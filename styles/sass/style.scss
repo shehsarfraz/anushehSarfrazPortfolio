@@ -1,4 +1,5 @@
 @use 'setup';
+@use 'mediaQueries';
 
 $black: #14070E; 
 $darkGreen: #365C46;
@@ -13,6 +14,8 @@ $bodyFont: 'Source Sans Pro';
 body {
     font-family: $bodyFont;
     text-transform: lowercase;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 span {
@@ -218,3 +221,4 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
